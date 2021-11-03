@@ -1,0 +1,23 @@
+/*--- Header ---*/
+
+/*--- Layout ---*/
+.header {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 1em;
+}
+
+/*--- Typography ---*/
+.header {
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.link {
+  margin: 0 1em;
+  padding: 0.5em 1em;
+
+  border: 1px solid white;
+}
