@@ -4,8 +4,8 @@
 .header {
   display: flex;
   justify-content: space-between;
-
   padding: 1em;
+  margin: 3em 0;
 }
 
 /*--- Typography ---*/
@@ -16,8 +16,5 @@
 }
 
 .link {
-  margin: 0 1em;
-  padding: 0.5em 1em;
-
   border: 1px solid white;
 }

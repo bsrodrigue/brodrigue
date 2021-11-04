@@ -1,12 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
-
 :root {
   --light: #eeebdd;
-  --main-color: #ce1212;
+  --main-color: #aa14f0;
   --secondary-color: #810000;
   --dark: #1b1717;
 
   --wrapping: 100px;
+}
+
+/*--- Utils ---*/
+.primary {
+  color: var(--main-color);
+}
+
+.primary-bg {
+  padding: 0.1em 0.2em;
+  background-color: var(--main-color);
+}
+.secondary {
+  color: var(--secondary-color);
+}
+
+.secondary-bg {
+  padding: 0.1em 0.2em;
+  background-color: var(--secondary-color);
 }
 
 /*--- Layout ---*/
@@ -18,6 +35,16 @@ html,
 body {
   padding: 0;
   margin: 0;
+}
+
+.wrapper {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
 }
 
 /*--- Background ---*/

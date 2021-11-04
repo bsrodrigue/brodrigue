@@ -1,0 +1,67 @@
+/*--- Project Card ---*/
+.project-cards {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  column-gap: 0.5em;
+  row-gap: 1em;
+  margin: 30px 0px;
+}
+
+.project-card {
+  position: relative;
+  width: 100%;
+  margin: 1px;
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+}
+
+.project-overlay,
+.project-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.project-overlay {
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0);
+  left: -100%;
+  width: 100%;
+  text-align: center;
+  padding: 5px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.3s ease-in-out;
+}
+
+.project-card:hover > .project-overlay {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  left: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.project-title {
+  font-weight: bold;
+}
+
+.project-description {
+  text-align: center;
+  font-size: 14px;
+}
+
+.tech-logo {
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  margin: 0px 5px;
+}
+
+.project-open {
+  border: 1px solid black;
+}
