@@ -2,7 +2,7 @@ import { PortfolioProject } from "./interfaces";
 
 const portfolioProjects: PortfolioProject[] = [
   {
-    cover: "",
+    cover: require("./public/images/projects/afrosound.webp"),
     title: "AfroSound",
     description:
       "Une page d'accueil pour une plateforme fictive de streaming et de téléchargement de musique africaine.",
@@ -10,7 +10,7 @@ const portfolioProjects: PortfolioProject[] = [
     stack: "vanilla",
   },
   {
-    cover: "",
+    cover: require("./public/images/projects/hiredev.webp"),
     title: "Hire A Dev",
     description:
       "Une page d'accueil pour une plateforme fictive de publications d'offres et de demandes d'emploi pour développeurs.",
@@ -18,7 +18,7 @@ const portfolioProjects: PortfolioProject[] = [
     stack: "vanilla",
   },
   {
-    cover: "",
+    cover: require("./public/images/projects/gameyaar.webp"),
     title: "Gameyaar",
     description:
       "Il s'agit d'un site web purement fictif de ventes de consoles de jeux. Je l'ai fait sans utiliser aucun framework css.",

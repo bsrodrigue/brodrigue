@@ -1,0 +1,10 @@
+/*--- Section ---*/
+.title {
+  color: var(--secondary-color);
+  font-size: 2em;
+  text-transform: uppercase;
+}
+
+.description {
+  font-style: italic;
+}
