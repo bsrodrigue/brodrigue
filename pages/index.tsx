@@ -2,21 +2,41 @@ import ProfilePicture from "../components/ProfilePicture";
 import Welcome from "../components/Welcome";
 import Section from "../components/Section";
 import Portfolio from "../components/Portfolio";
+import ServiceCard from "../components/ServiceCard";
+import { Service } from "../interfaces";
+
+import settings from "../settings";
+const { services } = settings;
 
 export default function Home() {
   return (
     <>
-      <section className="">
-        <div className="wrapper">
-          <div className="center">
-            <ProfilePicture />
-          </div>
-          <Welcome />
+      <Section title="">
+        <div className="center">
+          <ProfilePicture />
         </div>
-      </section>
+        <Welcome />
+      </Section>
 
-      <Section title="Portfolio" description="Here is a glimpse of my work">
+      <Section
+        background="bg-white"
+        title="Vanilla Projects"
+        description="Here are some of my frontend vanilla projects. I just used plain HTML, CSS and Javascript."
+      >
         <Portfolio />
+      </Section>
+
+      <Section>
+        <h1>My Services</h1>
+        <div className="x-flex">
+          {services.map((service: Service, index: number) => (
+            <ServiceCard
+              key={index}
+              title={service.title}
+              description={service.description}
+            />
+          ))}
+        </div>
       </Section>
     </>
   );

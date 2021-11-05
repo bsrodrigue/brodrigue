@@ -5,7 +5,7 @@ const { portfolioProjects } = settings;
 
 const Portfolio: React.FC = () => {
   return (
-    <div className="grid">
+    <div id="portfolio" className="grid">
       {portfolioProjects.map((project: PortfolioProject, index: number) => (
         <ProjectCard key={index} project={project} />
       ))}

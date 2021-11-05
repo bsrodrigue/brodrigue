@@ -5,3 +5,9 @@ export interface PortfolioProject {
   cover: string;
   stack?: string;
 }
+
+export interface Service {
+  title: string;
+  description: string;
+  price?: string;
+}

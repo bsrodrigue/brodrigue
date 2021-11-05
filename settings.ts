@@ -1,4 +1,22 @@
-import { PortfolioProject } from "./interfaces";
+import { PortfolioProject, Service } from "./interfaces";
+
+const services: Service[] = [
+  {
+    title: "Fullstack Developpement",
+    description:
+      "I will build you a complete website with Django. I can even build an API with a React frontend for you.",
+  },
+  {
+    title: "Frontend Developpement",
+    description:
+      "Need a frontend for your project? Do not worry, I will make you a beautiful and elegant website with React.",
+  },
+  {
+    title: "Mobile Developpement",
+    description:
+      "I can build for you a complete mobile application for your business.",
+  },
+];
 
 const portfolioProjects: PortfolioProject[] = [
   {
@@ -29,6 +47,7 @@ const portfolioProjects: PortfolioProject[] = [
 
 const settings = {
   portfolioProjects,
+  services,
   navbar_links: [
     {
       title: "Home",
@@ -36,7 +55,7 @@ const settings = {
     },
     {
       title: "Portfolio",
-      to: "/portfolio",
+      to: "/#portfolio",
     },
     {
       title: "Personal Projects",
