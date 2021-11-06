@@ -55,7 +55,7 @@ export default function Home() {
           Need my expertise for a project? Or do you just want to say hello?
           Email me! <BsEmojiSmile />
         </small>
-        <form id="contact-form" name="contact" method="POST" data-netlify="true">
+        <form name="contact" netlify>
           <div className="input-container">
             <label htmlFor="name">Full Name </label>
             <input type="text" name="name" id="" required />
