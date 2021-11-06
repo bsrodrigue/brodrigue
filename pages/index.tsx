@@ -14,6 +14,8 @@ import Portfolio from "../components/Portfolio";
 import ServiceCard from "../components/ServiceCard";
 import { Service } from "../interfaces";
 
+import axios from "axios";
+
 import settings from "../settings";
 const { services } = settings;
 
@@ -53,7 +55,7 @@ export default function Home() {
           Need my expertise for a project? Or do you just want to say hello?
           Email me! <BsEmojiSmile />
         </small>
-        <form id="contact-form" action="">
+        <form id="contact-form" name="contact" method="POST" data-netlify="true">
           <div className="input-container">
             <label htmlFor="name">Full Name </label>
             <input type="text" name="name" id="" required />
@@ -72,7 +74,10 @@ export default function Home() {
               required
             ></textarea>
           </div>
-          <input type="submit" value="Send me a message" />
+          <input
+            type="submit"
+            value="Send me a message"
+          />
         </form>
       </Section>
 
