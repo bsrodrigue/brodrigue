@@ -2,17 +2,17 @@ import { PortfolioProject, Service } from "./interfaces";
 
 const services: Service[] = [
   {
-    title: "Fullstack Developpement",
+    title: "Fullstack Development",
     description:
       "I will build you a complete website with Django. I can even build an API with a React frontend for you.",
   },
   {
-    title: "Frontend Developpement",
+    title: "Frontend Development",
     description:
       "Need a frontend for your project? Do not worry, I will make you a beautiful and elegant website with React.",
   },
   {
-    title: "Mobile Developpement",
+    title: "Mobile Development",
     description:
       "I can build for you a complete mobile application for your business.",
   },
@@ -58,8 +58,8 @@ const settings = {
       to: "/#portfolio",
     },
     {
-      title: "Personal Projects",
-      to: "/personal-projects",
+      title: "My Services",
+      to: "/#services",
     },
     {
       title: "Blog",
@@ -67,11 +67,15 @@ const settings = {
     },
     {
       title: "Contact",
-      to: "/contact",
+      to: "/#contact",
     },
     {
-      title: "Resume",
-      to: "/resume",
+      title: "Social Network",
+      to: "/#social",
+    },
+    {
+      title: "Github",
+      to: "https://github.com/bsrodrigue",
     },
   ],
 };

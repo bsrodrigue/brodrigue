@@ -14,7 +14,7 @@ const ServiceCard: React.FC<Service> = (props: Service) => {
       </div>
 
       <div className="card-footer">
-        <a className="card-link" href="">
+        <a className="card-link" href="#contact">
           Contact Me
         </a>
       </div>

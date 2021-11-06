@@ -5,7 +5,7 @@ const Welcome: React.FC = () => {
     <div className={style.welcome}>
       <h1>
         {" "}
-        <span className="primary-bg">Fullstack</span> Web Developper
+        <span className="primary-bg">Fullstack</span> Web Developer
       </h1>
       <p>
         Hello! I am Rachid BADINI. I am a 23 years old Fullstack Web Developper.

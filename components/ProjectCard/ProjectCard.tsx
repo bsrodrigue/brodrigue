@@ -16,7 +16,7 @@ const ProjectCard: React.FC<Props> = (props: Props) => {
         <p className={style.project_title}>{title}</p>
         <p className={style.project_description}>{description}</p>
         <div className="">
-          <FontAwesomeIcon icon="html5" size="sm" color="black" />
+          <FontAwesomeIcon icon={["fas", "html5"]} color="black" />
           <FontAwesomeIcon icon="css3" size="sm" />
           <FontAwesomeIcon icon="js" size="sm" />
         </div>
