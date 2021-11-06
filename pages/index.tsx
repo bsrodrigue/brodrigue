@@ -1,3 +1,12 @@
+import React from "react";
+import Link from "next/link";
+import {
+  BsEmojiSmile,
+  BsLinkedin,
+  BsFacebook,
+  BsInstagram,
+  BsGithub,
+} from "react-icons/bs";
 import ProfilePicture from "../components/ProfilePicture";
 import Welcome from "../components/Welcome";
 import Section from "../components/Section";
@@ -11,7 +20,6 @@ const { services } = settings;
 export default function Home() {
   return (
     <>
-      <div id="top"></div>
       <Section title="">
         <div className="center">
           <ProfilePicture />
@@ -26,10 +34,12 @@ export default function Home() {
 
       <Section>
         <h1 id="services">My Services</h1>
+        <small>Check out the different services I can provide you</small>
         <div className="x-flex">
           {services.map((service: Service, index: number) => (
             <ServiceCard
               key={index}
+              icon={service.icon}
               title={service.title}
               description={service.description}
             />
@@ -39,7 +49,10 @@ export default function Home() {
 
       <Section id="contact" background="bg-white">
         <h1 id="services">Contact Me</h1>
-        <small>Want to get in touch with me? Send me an email!</small>
+        <small>
+          Need my expertise for a project? Or do you just want to say hello?
+          Email me! <BsEmojiSmile />
+        </small>
         <form id="contact-form" action="">
           <div className="input-container">
             <label htmlFor="name">Full Name </label>
@@ -63,11 +76,24 @@ export default function Home() {
         </form>
       </Section>
 
-      <Section>
-        <h1 id="social">Social Media</h1>
-        <small>Follow me on social media!</small>
-        <div className="x-flex"></div>
-      </Section>
+      <footer>
+        <Section>
+          <h1 id="social">Thanks for visiting!</h1>
+          <small>Follow me on social media:</small>
+          <div className="social-links">
+            <Link href="https://www.linkedin.com/in/rachid-rodrigue-badini-688a92186/">
+              <BsLinkedin />
+            </Link>
+            <Link href="https://web.facebook.com/profile.php?id=100074024144935">
+              <BsFacebook />
+            </Link>
+            <Link href="https://www.instagram.com/halloweeeeb/">
+              <BsInstagram />
+            </Link>
+          </div>
+          <p>© 2020-2021 b-rodrigue.com · All Rights Reserved </p>
+        </Section>
+      </footer>
 
       <a href="#top" className="back-to-top material-shadow">
         Back to top

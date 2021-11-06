@@ -8,6 +8,7 @@ const links = settings.navbar_links;
 const Header: React.FC = () => {
   return (
     <header className={style.header}>
+      <div id="top"></div>
       <div className="wrapper">
         <nav>
           {links.map((link: any, index: number) => (

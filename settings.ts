@@ -1,20 +1,22 @@
 import { PortfolioProject, Service } from "./interfaces";
-
 const services: Service[] = [
   {
+    icon: "django",
     title: "Fullstack Development",
     description:
-      "I will build you a complete website with Django. I can even build an API with a React frontend for you.",
+      "Most serious businesses need a clean and beautiful web site. I can build you one with Django.",
   },
   {
+    icon: "react",
     title: "Frontend Development",
     description:
-      "Need a frontend for your project? Do not worry, I will make you a beautiful and elegant website with React.",
+      "Need a frontend for your project? Do not worry, I will make you a beautiful and elegant website with React or Vanilla technologies.",
   },
   {
+    icon: "flutter",
     title: "Mobile Development",
     description:
-      "I can build for you a complete mobile application for your business.",
+      "I can build for you a nice looking mobile application for your business with Flutter and Dart.",
   },
 ];
 

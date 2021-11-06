@@ -3,7 +3,6 @@
 .project_card {
   position: relative;
   width: 100%;
-  margin: 1px;
   overflow: hidden;
   aspect-ratio: 16 / 9;
 }
@@ -55,8 +54,9 @@
 }
 
 .project_description {
+  margin: 0.5em 0;
   text-align: center;
-  font-size: 14px;
+  font-size: 1em;
 }
 
 .tech_logo {

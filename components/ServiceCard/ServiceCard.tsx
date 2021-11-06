@@ -1,11 +1,19 @@
 import React from "react";
+import { DiDjango, DiReact } from "react-icons/di";
+import { SiFlutter } from "react-icons/si";
+
 import { Service } from "../../interfaces";
 
 const ServiceCard: React.FC<Service> = (props: Service) => {
-  const { title, description } = props;
+  const { icon, title, description } = props;
   return (
     <div className="card">
       <div className="card-header">
+        <div className="card-icon">
+          {icon === "django" && <DiDjango />}
+          {icon === "react" && <DiReact />}
+          {icon === "flutter" && <SiFlutter />}
+        </div>
         <p className="card-title">{title}</p>
       </div>
 

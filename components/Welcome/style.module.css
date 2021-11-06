@@ -15,8 +15,7 @@
 
 .welcome p {
   font-size: 1.5em;
-  line-height: 1.5em;
-  text-align: justify;
+  font-style: italic;
 }
 
 .welcome span {

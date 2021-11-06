@@ -1,8 +1,18 @@
 import Image from "next/image";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import style from "./style.module.css";
+import { IoLogoHtml5, IoLogoCss3, IoLogoJavascript } from "react-icons/io5";
 
 import { PortfolioProject } from "../../interfaces";
+
+const VanillaProjectLogos: React.FC = () => {
+  return (
+    <div className="icon-row">
+      <IoLogoHtml5 />
+      <IoLogoCss3 />
+      <IoLogoJavascript />
+    </div>
+  );
+};
 
 interface Props {
   project: PortfolioProject;
@@ -15,11 +25,7 @@ const ProjectCard: React.FC<Props> = (props: Props) => {
       <div className={style.project_overlay}>
         <p className={style.project_title}>{title}</p>
         <p className={style.project_description}>{description}</p>
-        <div className="">
-          <FontAwesomeIcon icon={["fas", "html5"]} color="black" />
-          <FontAwesomeIcon icon="css3" size="sm" />
-          <FontAwesomeIcon icon="js" size="sm" />
-        </div>
+        <VanillaProjectLogos />
         <a className={`${style.project_open} fill-button`} href={link}>
           Check Project
         </a>
