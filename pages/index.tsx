@@ -102,13 +102,13 @@ export default function Home() {
           <h1 id="social">Thanks for visiting!</h1>
           <small>Follow me on social media:</small>
           <div className="social-links">
-            <Link href="https://www.linkedin.com/in/rachid-rodrigue-badini-688a92186/">
+            <Link passHref href="https://www.linkedin.com/in/rachid-rodrigue-badini-688a92186/">
               <BsLinkedin />
             </Link>
-            <Link href="https://web.facebook.com/profile.php?id=100074024144935">
+            <Link passHref href="https://web.facebook.com/profile.php?id=100074024144935">
               <BsFacebook />
             </Link>
-            <Link href="https://www.instagram.com/halloweeeeb/">
+            <Link passHref href="https://www.instagram.com/halloweeeeb/">
               <BsInstagram />
             </Link>
           </div>
