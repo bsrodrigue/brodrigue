@@ -26,7 +26,7 @@ const ProjectCard: React.FC<Props> = (props: Props) => {
         <p className={style.project_title}>{title}</p>
         <p className={style.project_description}>{description}</p>
         <VanillaProjectLogos />
-        <a className={`${style.project_open} fill-button`} href={link}>
+        <a className={`${style.project_open} fill-button`} href={link} target="_blank">
           Check Project
         </a>
       </div>

@@ -5,7 +5,6 @@ import {
   BsLinkedin,
   BsFacebook,
   BsInstagram,
-  BsGithub,
 } from "react-icons/bs";
 import ProfilePicture from "../components/ProfilePicture";
 import Welcome from "../components/Welcome";
@@ -14,10 +13,20 @@ import Portfolio from "../components/Portfolio";
 import ServiceCard from "../components/ServiceCard";
 import { Service } from "../interfaces";
 
-import axios from "axios";
-
 import settings from "../settings";
-const { services } = settings;
+const { services, portfolioProjects } = settings;
+
+const vanillaProjects = portfolioProjects.filter((project) => {
+  return project.stack === 'vanilla';
+})
+
+const reactProjects = portfolioProjects.filter((project) => {
+  return project.stack === 'react';
+})
+
+const fullstackProjects = portfolioProjects.filter((project) => {
+  return project.stack === 'fullstack';
+})
 
 export default function Home() {
   return (
@@ -29,9 +38,16 @@ export default function Home() {
         <Welcome />
       </Section>
 
-      <Section background="bg-white" title="">
-        <h1 id="services">Vanilla Projects</h1>
-        <Portfolio />
+      <Section background="bg-white">
+        <Portfolio title="Vanilla Projects" projects={vanillaProjects} />
+      </Section>
+
+      <Section background="bg-white">
+        <Portfolio title="React Projects" projects={reactProjects} />
+      </Section>
+
+      <Section background="bg-white">
+        <Portfolio title="Fullstack Projects" projects={fullstackProjects} />
       </Section>
 
       <Section>
@@ -55,7 +71,7 @@ export default function Home() {
           Need my expertise for a project? Or do you just want to say hello?
           Email me! <BsEmojiSmile />
         </small>
-        <form name="contact" netlify>
+        <form name="contact">
           <div className="input-container">
             <label htmlFor="name">Full Name </label>
             <input type="text" name="name" id="" required />

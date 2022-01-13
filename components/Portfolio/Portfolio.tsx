@@ -1,15 +1,22 @@
 import { PortfolioProject } from "../../interfaces";
 import ProjectCard from "../../components/ProjectCard";
-import settings from "../../settings";
-const { portfolioProjects } = settings;
 
-const Portfolio: React.FC = () => {
+interface Props {
+  title: string;
+  projects: PortfolioProject[];
+}
+
+const Portfolio: React.FC<Props> = (props: Props) => {
+  const { title, projects } = props;
   return (
-    <div id="portfolio" className="grid">
-      {portfolioProjects.map((project: PortfolioProject, index: number) => (
-        <ProjectCard key={index} project={project} />
-      ))}
-    </div>
+    <>
+      <h1 id="services">{title}</h1>
+      <div id="portfolio" className="grid">
+        {projects.map((project: PortfolioProject, index: number) => (
+          <ProjectCard key={index} project={project} />
+        ))}
+      </div>
+    </>
   );
 };
 

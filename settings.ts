@@ -45,6 +45,22 @@ const portfolioProjects: PortfolioProject[] = [
     link: "https://gameyaar.netlify.app/",
     stack: "vanilla",
   },
+  {
+    cover: require("./public/images/projects/otapic.png"),
+    title: "Otapic",
+    description:
+      "Ce jeu s'inpire du celebre 4 Images 1 Mot. Vous devez deviner le nom du personnage de Manga en vous guidant des quatre images.",
+    link: "https://otapic.netlify.app/",
+    stack: "react",
+  },
+  {
+    cover: require("./public/images/projects/stalnov.png"),
+    title: "Stallion Novels",
+    description:
+      "Stallion Novels est une plateforme de lecture, de redaction et de partage de romans en ligne.",
+    link: "http://stalnov.click:8000/",
+    stack: "fullstack",
+  },
 ];
 
 const settings = {
