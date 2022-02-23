@@ -13,10 +13,10 @@ const services: Service[] = [
       "Need a frontend for your project? Do not worry, I will make you a beautiful and elegant website with React or Vanilla technologies.",
   },
   {
-    icon: "flutter",
+    icon: "react-native",
     title: "Mobile Development",
     description:
-      "I can build for you a nice looking mobile application for your business with Flutter and Dart.",
+      "I can build for you a nice looking mobile application for your business with React Native.",
   },
 ];
 

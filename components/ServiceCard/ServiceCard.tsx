@@ -1,7 +1,5 @@
 import React from "react";
 import { DiDjango, DiReact } from "react-icons/di";
-import { SiFlutter } from "react-icons/si";
-
 import { Service } from "../../interfaces";
 
 const ServiceCard: React.FC<Service> = (props: Service) => {
@@ -12,7 +10,7 @@ const ServiceCard: React.FC<Service> = (props: Service) => {
         <div className="card-icon">
           {icon === "django" && <DiDjango />}
           {icon === "react" && <DiReact />}
-          {icon === "flutter" && <SiFlutter />}
+          {icon === "react-native" && <DiReact />}
         </div>
         <p className="card-title">{title}</p>
       </div>

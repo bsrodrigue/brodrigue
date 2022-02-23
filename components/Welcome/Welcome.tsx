@@ -11,10 +11,8 @@ const Welcome: React.FC = () => {
         Hello! I am Rachid BADINI. I am a 23 years old Fullstack Web Developper.
         I specialize in <span style={{ color: "mediumturquoise" }}>React</span>{" "}
         and <span style={{ color: "mediumseagreen" }}>Django</span>, but I am
-        also open to other technologies like{" "}
-        <span style={{ color: "turquoise" }}>Flutter</span> and{" "}
-        <span style={{ color: "gold" }}>Firebase</span>. When I am not building
-        websites, I work on personal projects like mobile apps or video games.
+        also open to other technologies.
+        When I am not building websites, I work on personal projects like mobile apps, command line tools, etc.
       </p>
     </div>
   );
