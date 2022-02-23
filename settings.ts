@@ -54,6 +54,14 @@ const portfolioProjects: PortfolioProject[] = [
     stack: "react",
   },
   {
+    cover: require("./public/images/projects/pomodoomer.png"),
+    title: "Pomodoomer",
+    description:
+      "Une simple application web pomodoro",
+    link: "https://pomodoomer.netlify.app/",
+    stack: "react",
+  },
+  {
     cover: require("./public/images/projects/stalnov.png"),
     title: "Stallion Novels",
     description:
