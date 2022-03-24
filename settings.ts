@@ -2,22 +2,22 @@ import { PortfolioProject, Service } from "./interfaces";
 const services: Service[] = [
   {
     icon: "django",
-    title: "Fullstack Development",
+    title: "Dévéloppement Fullstack",
     description:
-      "Most serious businesses need a clean and beautiful web site. I can build you one with Django.",
+      "Vous avez besoin d'un site web élégant et complet? Laissez-moi faire avec l'aide de Django.",
   },
   {
     icon: "react",
-    title: "Frontend Development",
+    title: "Dévéloppement Frontend",
     description:
-      "Need a frontend for your project? Do not worry, I will make you a beautiful and elegant website with React or Vanilla technologies.",
+      "Beaucoup de dévéloppeurs web négligent les compétences en implémentation d'interfaces pour les pages web. Confiez-moi ce travail.",
   },
-  {
-    icon: "react-native",
-    title: "Mobile Development",
-    description:
-      "I can build for you a nice looking mobile application for your business with React Native.",
-  },
+  // {
+  //   icon: "react-native",
+  //   title: "Mobile Development",
+  //   description:
+  //     "I can build for you a nice looking mobile application for your business with React Native.",
+  // },
 ];
 
 const portfolioProjects: PortfolioProject[] = [
@@ -78,40 +78,53 @@ const portfolioProjects: PortfolioProject[] = [
     stack: "fullstack",
   },
 ];
+const navbar_links = [
+  {
+    title: "Accueil",
+    to: "/",
+  },
+  {
+    title: "Portfolio",
+    to: "/portfolio",
+  },
+  {
+    title: "Mes services",
+    to: "/#services",
+  },
+  {
+    title: "Blog",
+    to: "/blog",
+  },
+  {
+    title: "Contact",
+    to: "/#contact",
+  },
+  {
+    title: "Réseaux sociaux",
+    to: "/#social",
+  },
+  {
+    title: "Github",
+    to: "https://github.com/bsrodrigue",
+  },
+];
+
+const actuality = [
+  "Je suis étudiant en Master I de Management de Système d'Informations.",
+  "Je travaille en tant que dévéloppeur web chez Nine7soft.",
+  "J'apprends le langage de programmation C",
+  "J'étudie la conception d'interpréteurs pour créer mon propre langage de programmation.",
+  "J'approfondis mes connaissances en Linux.",
+  "Je rassemble des idées pour la rédaction d'un éventuel roman.",
+  "Je lis le manga 'Vagabond' (j'adore).",
+  "Je profite de la vie.",
+];
 
 const settings = {
   portfolioProjects,
   services,
-  navbar_links: [
-    {
-      title: "Home",
-      to: "/",
-    },
-    {
-      title: "Portfolio",
-      to: "/portfolio",
-    },
-    {
-      title: "My Services",
-      to: "/#services",
-    },
-    {
-      title: "Blog",
-      to: "/blog",
-    },
-    {
-      title: "Contact",
-      to: "/#contact",
-    },
-    {
-      title: "Social Network",
-      to: "/#social",
-    },
-    {
-      title: "Github",
-      to: "https://github.com/bsrodrigue",
-    },
-  ],
+  navbar_links,
+  actuality,
 };
 
 export default settings;

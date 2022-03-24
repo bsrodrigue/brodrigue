@@ -45,9 +45,7 @@ const ProjectCard: React.FC<Props> = (props: Props) => {
         {stack === 'vanilla' && <VanillaProjectLogos />}
         {stack === 'react' && <ReactProjectLogos />}
         {stack === 'fullstack' && <DjangoProjectLogos />}
-        <a className={`${style.project_open} fill-button`} href={link} target="_blank" rel="noreferrer">
-          Check Project
-        </a>
+        <a className={`${style.project_open} fill-button`} href={link} target="_blank" rel="noreferrer">Découvrir</a>
       </div>
       <Image className={style.project_img} src={cover} alt="project-cover" />
     </div>
