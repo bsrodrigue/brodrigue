@@ -104,6 +104,14 @@ const navbar_links = [
     to: "/#social",
   },
   {
+    title: "Mes projets",
+    to: "/my-projects",
+  },
+  {
+    title: "Mes revues",
+    to: "/reviews",
+  },
+  {
     title: "Github",
     to: "https://github.com/bsrodrigue",
   },
