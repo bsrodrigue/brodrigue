@@ -62,6 +62,14 @@ const portfolioProjects: PortfolioProject[] = [
     stack: "react",
   },
   {
+    cover: require("./public/images/projects/brodrigue.png"),
+    title: "BRodrigue",
+    description:
+      "Et oui! ce site fait parti de mes conceptions ;')",
+    link: "https://b-rodrigue.com/",
+    stack: "react",
+  },
+  {
     cover: require("./public/images/projects/stalnov.png"),
     title: "Stallion Novels",
     description:
