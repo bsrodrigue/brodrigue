@@ -5,14 +5,13 @@ const Welcome: React.FC = () => {
     <div className={style.welcome}>
       <h1>
         {" "}
-        <span className="primary-bg">Fullstack</span> Web Developer
+        <span className="primary-bg">BADINI</span> Rachid Rodrigue
       </h1>
       <p>
-        Hello! I am Rachid BADINI. I am a 23 years old Fullstack Web Developper.
-        I specialize in <span style={{ color: "mediumturquoise" }}>React</span>{" "}
-        and <span style={{ color: "mediumseagreen" }}>Django</span>, but I am
-        also open to other technologies.
-        When I am not building websites, I work on personal projects like mobile apps, command line tools, etc.
+        Salut et bienvenue sur mon site! Je me présente, je réponds au nom de BADINI Rachid Rodrigue. J'ai 23 ans et je
+        vis au Burkina Faso. Je suis dévéloppeur web fullstack mais je suis également passionné par d'autres domaines de
+        la programmation. Mes plus grandes passions sont la lecture, les jeux vidéos, apprendre de nouvelles technologies
+        et découvrir comment les choses fonctionnent.
       </p>
     </div>
   );

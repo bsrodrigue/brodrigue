@@ -14,19 +14,7 @@ import ServiceCard from "../components/ServiceCard";
 import { Service } from "../interfaces";
 
 import settings from "../settings";
-const { services, portfolioProjects } = settings;
-
-const vanillaProjects = portfolioProjects.filter((project) => {
-  return project.stack === 'vanilla';
-})
-
-const reactProjects = portfolioProjects.filter((project) => {
-  return project.stack === 'react';
-})
-
-const fullstackProjects = portfolioProjects.filter((project) => {
-  return project.stack === 'fullstack';
-})
+const { services } = settings;
 
 export default function Home() {
   return (
@@ -39,16 +27,21 @@ export default function Home() {
       </Section>
 
       <Section background="bg-white">
-        <Portfolio title="Vanilla Projects" projects={vanillaProjects} />
+        <h1 id="my-actuality">Mon actualité</h1>
+        <small>Dans cette section je décris en gros mes activités et projets du moment: </small>
+        <ul>
+          <li>Je suis étudiant en Master I de Management de Système d'Informations.</li>
+          <li>Je travaille en tant que dévéloppeur web chez Nine7soft.</li>
+          <li>J'apprends le langage de programmation C</li>
+          <li>J'étudie la conception d'interpréteurs pour créer mon propre langage de programmation.</li>
+          <li>J'approfondis mes connaissances en Linux.</li>
+          <li>Je rassemble des idées pour la rédaction d'un éventuel roman.</li>
+          <li>Je lis le manga 'Vagabond' (j'adore).</li>
+          <li>Je profite de la vie.</li>
+        </ul>
       </Section>
 
-      <Section background="bg-white">
-        <Portfolio title="React Projects" projects={reactProjects} />
-      </Section>
 
-      <Section background="bg-white">
-        <Portfolio title="Fullstack Projects" projects={fullstackProjects} />
-      </Section>
 
       <Section>
         <h1 id="services">My Services</h1>
@@ -97,24 +90,6 @@ export default function Home() {
         </form>
       </Section>
 
-      <footer>
-        <Section>
-          <h1 id="social">Thanks for visiting!</h1>
-          <small>Follow me on social media:</small>
-          <div className="social-links">
-            <Link passHref href="https://www.linkedin.com/in/rachid-rodrigue-badini-688a92186/">
-              <BsLinkedin />
-            </Link>
-            <Link passHref href="https://web.facebook.com/profile.php?id=100074024144935">
-              <BsFacebook />
-            </Link>
-            <Link passHref href="https://www.instagram.com/halloweeeeb/">
-              <BsInstagram />
-            </Link>
-          </div>
-          <p>© 2020-2021 b-rodrigue.com · All Rights Reserved </p>
-        </Section>
-      </footer>
 
       <a href="#top" className="back-to-top material-shadow">
         Back to top
