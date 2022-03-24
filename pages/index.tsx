@@ -1,19 +1,13 @@
-import React from "react";
-import Link from "next/link";
 import {
-  BsEmojiSmile,
-  BsLinkedin,
-  BsFacebook,
-  BsInstagram,
+  BsEmojiSmile
 } from "react-icons/bs";
 import ProfilePicture from "../components/ProfilePicture";
-import Welcome from "../components/Welcome";
 import Section from "../components/Section";
-import Portfolio from "../components/Portfolio";
 import ServiceCard from "../components/ServiceCard";
+import Welcome from "../components/Welcome";
 import { Service } from "../interfaces";
-
 import settings from "../settings";
+
 const { services } = settings;
 
 export default function Home() {

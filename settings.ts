@@ -81,7 +81,7 @@ const settings = {
     },
     {
       title: "Portfolio",
-      to: "/#portfolio",
+      to: "/portfolio",
     },
     {
       title: "My Services",
