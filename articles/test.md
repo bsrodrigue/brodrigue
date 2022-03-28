@@ -8,8 +8,6 @@ category: review
 tags:
   - nextjs
 ---
-
-
 # Why is one of the most profitable companies so reluctant with developing good games?
 
 My personal website is finally ready to serve blog articles. I wonder what kind of stuff I'll be writing.
