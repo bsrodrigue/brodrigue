@@ -1,33 +1,39 @@
+import fs from 'fs';
+import matter from 'gray-matter';
 import React from "react";
-import { Client } from "@notionhq/client";
+import { Articles, Section } from "../components";
 
-const notion = new Client({ auth: process.env.REACT_APP_NOTION_ACCESS_TOKEN });
 
-async function foo() {
-  try {
+export async function getStaticProps() {
+  const files = fs.readdirSync('articles');
 
-    const myPage = await notion.databases.query({
-      database_id: process.env.REACT_APP_NOTION_BLOG_DATABASE_ID
-    });
+  const articles = files.map((fileName) => {
+    const slug = fileName.replace('.md', '');
+    const readFile = fs.readFileSync(`articles/${fileName}`, 'utf-8');
+    const { data: frontmatter } = matter(readFile);
 
-    console.log(myPage);
-  } catch (error) {
-    console.error(error);
+
+    return {
+      slug, frontmatter,
+    };
+  });
+
+  return {
+    props: {
+      articles,
+    },
   }
 }
 
-
-
-
-const BlogPage: React.FC = () => {
-  foo();
+export default function Blog({ articles }) {
   return (
-    <>
+    <Section background="bg-white">
+
       <div className="wrapper">
         <p>Empty for now</p>
+        <Articles articles={articles} />
       </div>
-    </>
+    </Section>
   );
 };
 
-export default BlogPage;

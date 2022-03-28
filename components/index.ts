@@ -9,3 +9,4 @@ export { default as ServiceCard } from './ServiceCard';
 export { default as Welcome } from './Welcome';
 export { default as Actuality } from './Actuality';
 export { default as MyServices } from './MyServices';
+export { default as Articles } from './Articles';
