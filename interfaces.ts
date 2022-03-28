@@ -12,3 +12,11 @@ export interface Service {
   description: string;
   price?: string;
 }
+
+export interface ContentInformation{
+  title: string;
+  description: string;
+  link: string;
+  cover: string;
+  stack?: string;
+}

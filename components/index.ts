@@ -3,7 +3,7 @@ export { default as Footer } from './Footer';
 export { default as Header } from './Header';
 export { default as Portfolio } from './Portfolio';
 export { default as ProfilePicture } from './ProfilePicture';
-export { default as ProjectCard } from './ProjectCard';
+export { default as ContentCard } from './ContentCard';
 export { default as Section } from './Section';
 export { default as ServiceCard } from './ServiceCard';
 export { default as Welcome } from './Welcome';

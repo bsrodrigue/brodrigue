@@ -1,5 +1,5 @@
-import Link from "next/link";
-import Image from "next/image";
+import { ContentInformation } from "../../interfaces";
+import ContentCard from "../ContentCard";
 
 interface Props {
     //   title: string;
@@ -17,13 +17,20 @@ const Articles: React.FC<Props> = (props: Props) => {
       {description && <small>{description}</small>}
       <div id="portfolio" className="grid">
       </div> */}
-            {articles.map(({ slug, frontmatter }) => (
-                <Link href={`/blog/articles/${slug}`} key={slug}>
-                    <a >
-                        <Image width={256} height={256} src={frontmatter.socialImage} alt={frontmatter.title} />
-                    </a>
-                </Link>
-            ))}
+            <div id="portfolio" className="grid">
+                {articles.map(({ slug, frontmatter }) => {
+                    const content: ContentInformation = {
+                        title: frontmatter.title,
+                        description: "",
+                        cover: frontmatter.socialImage,
+                        link: slug,
+                    }
+
+                    return (
+                        <ContentCard key={slug} content={content} />
+                    )
+                })}
+            </div>
         </>
     );
 };

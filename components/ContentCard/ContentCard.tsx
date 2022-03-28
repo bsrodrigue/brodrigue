@@ -3,7 +3,7 @@ import style from "./style.module.css";
 import { IoLogoHtml5, IoLogoCss3, IoLogoJavascript } from "react-icons/io5";
 import { DiDjango, DiReact } from "react-icons/di";
 
-import { PortfolioProject } from "../../interfaces";
+import { ContentInformation, PortfolioProject } from "../../interfaces";
 
 const DjangoProjectLogos: React.FC = () => {
   return (
@@ -32,24 +32,24 @@ const VanillaProjectLogos: React.FC = () => {
 };
 
 interface Props {
-  project: PortfolioProject;
+  content: ContentInformation;
 }
-const ProjectCard: React.FC<Props> = (props: Props) => {
-  const { project } = props;
-  const { title, description, cover, link, stack } = project;
+const ContentCard: React.FC<Props> = (props: Props) => {
+  const { content } = props;
+  const { title, description, cover, link, stack } = content;
   return (
-    <div className={style.project_card}>
-      <div className={style.project_overlay}>
-        <p className={style.project_title}>{title}</p>
-        <p className={style.project_description}>{description}</p>
+    <div className={style.content_card}>
+      <div className={style.content_overlay}>
+        <p className={style.content_title}>{title}</p>
+        <p className={style.content_description}>{description}</p>
         {stack === 'vanilla' && <VanillaProjectLogos />}
         {stack === 'react' && <ReactProjectLogos />}
         {stack === 'fullstack' && <DjangoProjectLogos />}
-        <a className={`${style.project_open} fill-button`} href={link} target="_blank" rel="noreferrer">Découvrir</a>
+        <a className={`${style.content_open} fill-button`} href={link} target="_blank" rel="noreferrer">Découvrir</a>
       </div>
-      <Image className={style.project_img} src={cover} alt="project-cover" />
+      <Image className={style.content_img} src={cover} layout='fill' alt="project-cover" />
     </div>
   );
 };
 
-export default ProjectCard;
+export default ContentCard;

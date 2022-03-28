@@ -1,5 +1,5 @@
 import { PortfolioProject } from "../../interfaces";
-import ProjectCard from "../../components/ProjectCard";
+import ContentCard from "../ContentCard";
 
 interface Props {
   title: string;
@@ -15,7 +15,7 @@ const Portfolio: React.FC<Props> = (props: Props) => {
       {description && <small>{description}</small>}
       <div id="portfolio" className="grid">
         {projects.map((project: PortfolioProject, index: number) => (
-          <ProjectCard key={index} project={project} />
+          <ContentCard key={index} content={project} />
         ))}
       </div>
     </>
