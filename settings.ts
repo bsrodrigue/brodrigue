@@ -78,6 +78,7 @@ const portfolioProjects: PortfolioProject[] = [
     stack: "fullstack",
   },
 ];
+
 const navbar_links = [
   {
     title: "Accueil",
