@@ -1,6 +1,5 @@
 import fs from 'fs';
 import matter from 'gray-matter';
-import React from "react";
 import { Articles, Section } from "../components";
 
 
@@ -14,7 +13,8 @@ export async function getStaticProps() {
 
 
     return {
-      slug, frontmatter,
+      slug,
+      frontmatter,
     };
   });
 
@@ -30,7 +30,6 @@ export default function Blog({ articles }) {
     <Section background="bg-white">
 
       <div className="wrapper">
-        <p>Empty for now</p>
         <Articles articles={articles} />
       </div>
     </Section>
