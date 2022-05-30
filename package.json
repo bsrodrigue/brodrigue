@@ -45,6 +45,7 @@
         "@types/react": "^17.0.34",
         "eslint": "7.32.0",
         "eslint-config-next": "12.0.2",
+        "fifoqueue": "^0.1.2",
         "next-sitemap": "^2.5.28",
         "typescript": "^4.4.4"
     }
