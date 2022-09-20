@@ -1,11 +1,11 @@
 import { PortfolioProject, Service } from "./interfaces";
 const services: Service[] = [
-  {
-    icon: "django",
-    title: "Dévéloppement Fullstack",
-    description:
-      "Vous avez besoin d'un site web élégant et complet? Laissez-moi faire avec l'aide de Django.",
-  },
+  // {
+  //   icon: "django",
+  //   title: "Dévéloppement Fullstack",
+  //   description:
+  //     "Vous avez besoin d'un site web élégant et complet? Laissez-moi faire avec l'aide de Django.",
+  // },
   {
     icon: "react",
     title: "Dévéloppement Frontend",
@@ -93,10 +93,6 @@ const navbar_links = [
     to: "/#services",
   },
   {
-    title: "Blog",
-    to: "/blog",
-  },
-  {
     title: "Contact",
     to: "/#contact",
   },
@@ -109,10 +105,6 @@ const navbar_links = [
     to: "/my-projects",
   },
   {
-    title: "Mes revues",
-    to: "/reviews",
-  },
-  {
     title: "Github",
     to: "https://github.com/bsrodrigue",
   },
@@ -120,12 +112,9 @@ const navbar_links = [
 
 const actuality = [
   "Je suis étudiant en Master I de Management de Système d'Informations.",
-  "Je travaille en tant que dévéloppeur web chez Nine7soft.",
-  "J'apprends le langage de programmation C",
+  "Je travaille en tant que dévéloppeur front et mobile chez Nine7soft.",
   "J'étudie la conception d'interpréteurs pour créer mon propre langage de programmation.",
   "J'approfondis mes connaissances en Linux.",
-  "Je rassemble des idées pour la rédaction d'un éventuel roman.",
-  "Je lis le manga 'Vagabond' (j'adore).",
   "Je profite de la vie.",
 ];
 
