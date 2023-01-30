@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import { BsLinkedin } from "react-icons/bs";
+import { BsGithub, BsLinkedin } from "react-icons/bs";
 import settings from "../../settings";
 import Section from "../Section";
 
@@ -17,8 +17,11 @@ const Header: React.FC = () => {
                     <Link passHref href="https://www.linkedin.com/in/rachid-rodrigue-badini-688a92186/">
                         <BsLinkedin />
                     </Link>
+                    <Link passHref href="https://github.com/bsrodrigue">
+                        <BsGithub />
+                    </Link>
                 </div>
-                <p>© 2020-2022 b-rodrigue.com · Tous droits réservés </p>
+                <p>© 2021-2023 b-rodrigue.com · Tous droits réservés </p>
             </Section>
         </footer>
     );

@@ -13,10 +13,6 @@ const reactProjects = portfolioProjects.filter((project) => {
     return project.stack === 'react';
 })
 
-const fullstackProjects = portfolioProjects.filter((project) => {
-    return project.stack === 'fullstack';
-})
-
 const PortfolioPage: React.FC = () => {
     return (
         <>
@@ -26,7 +22,7 @@ const PortfolioPage: React.FC = () => {
                 <small>Voici certains de mes projets:</small>
             </Section>
             <Section background="bg-white">
-                <Portfolio title="Projets Vanilla" 
+                <Portfolio title="Projets Vanilla"
                     description="Ce sont de simples pages avec l'intention de démontrer mes compétences en développement frontend."
                     projects={vanillaProjects} />
             </Section>
@@ -35,12 +31,6 @@ const PortfolioPage: React.FC = () => {
                 <Portfolio title="Projets React"
                     description="Pour ces projets, j'ai voulu approfondir mes connaissances en React et comment organiser mon code source dessus."
                     projects={reactProjects} />
-            </Section>
-
-            <Section background="bg-white">
-                <Portfolio title="Projets Fullstack"
-                    description="Il s'agit là de projets plus complets avec le framework Django."
-                    projects={fullstackProjects} />
             </Section>
         </>
     );

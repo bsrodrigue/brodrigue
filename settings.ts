@@ -1,26 +1,17 @@
 import { PortfolioProject, Service } from "./interfaces";
 const services: Service[] = [
-  {
-    icon: "django",
-    title: "Dévéloppement Fullstack",
-    description:
-      "Vous avez besoin d'un site web élégant et complet? Laissez-moi faire avec l'aide de Django.",
-  },
+
   {
     icon: "react",
     title: "Dévéloppement Frontend",
     description:
       "Beaucoup de dévéloppeurs web négligent les compétences en implémentation d'interfaces pour les pages web. Confiez-moi ce travail.",
   },
-  // {
-  //   icon: "react-native",
-  //   title: "Mobile Development",
-  //   description:
-  //     "I can build for you a nice looking mobile application for your business with React Native.",
-  // },
+
 ];
 
 const portfolioProjects: PortfolioProject[] = [
+  // Vanilla (HTML, CSS, Javascript)
   {
     cover: require("./public/images/projects/afrosound.webp"),
     title: "AfroSound",
@@ -45,12 +36,14 @@ const portfolioProjects: PortfolioProject[] = [
     link: "https://gameyaar.netlify.app/",
     stack: "vanilla",
   },
+
+  // React
   {
-    cover: require("./public/images/projects/otapic.png"),
-    title: "Otapic",
+    cover: require("./public/images/projects/otapix.png"),
+    title: "Otapix",
     description:
-      "Ce jeu s'inpire du celebre 4 Images 1 Mot. Vous devez deviner le nom du personnage de Manga en vous guidant des quatre images.",
-    link: "https://otapic.netlify.app/",
+      "Ce jeu s'inpire du celebre 4 Images 1 Mot. Vous pouvez créer vos propres niveaux et les partager avec les autres joueurs.",
+    link: "https://dev-otapix.netlify.app/",
     stack: "react",
   },
   {
@@ -69,14 +62,7 @@ const portfolioProjects: PortfolioProject[] = [
     link: "https://b-rodrigue.com/",
     stack: "react",
   },
-  {
-    cover: require("./public/images/projects/stalnov.png"),
-    title: "Stallion Novels",
-    description:
-      "Stallion Novels est une plateforme de lecture, de redaction et de partage de romans en ligne.",
-    link: "http://stalnov.click:8000/",
-    stack: "fullstack",
-  },
+
 ];
 
 const navbar_links = [
@@ -93,10 +79,6 @@ const navbar_links = [
     to: "/#services",
   },
   {
-    title: "Blog",
-    to: "/blog",
-  },
-  {
     title: "Contact",
     to: "/#contact",
   },
@@ -109,10 +91,6 @@ const navbar_links = [
     to: "/my-projects",
   },
   {
-    title: "Mes revues",
-    to: "/reviews",
-  },
-  {
     title: "Github",
     to: "https://github.com/bsrodrigue",
   },
@@ -120,12 +98,11 @@ const navbar_links = [
 
 const actuality = [
   "Je suis étudiant en Master I de Management de Système d'Informations.",
-  "Je travaille en tant que dévéloppeur web chez Nine7soft.",
-  "J'apprends le langage de programmation C",
-  "J'étudie la conception d'interpréteurs pour créer mon propre langage de programmation.",
-  "J'approfondis mes connaissances en Linux.",
-  "Je rassemble des idées pour la rédaction d'un éventuel roman.",
-  "Je lis le manga 'Vagabond' (j'adore).",
+  "Je travaille en tant que dévéloppeur web et mobile chez Nine7soft depuis plus d'un an maintenant.",
+  "J'apprends le langage de programmation C.",
+  "J'étudie la conception d'interpréteurs et de compilateurs en Java et C.",
+  "J'apprends a faire la cuisine.",
+  "Je cherche de nouveaux jeux marquants à essayer.",
   "Je profite de la vie.",
 ];
 

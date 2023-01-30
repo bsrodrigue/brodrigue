@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
+
 :root {
-    --light: #eeebdd;
-    --main-color: #aa14f0;
-    --secondary-color: deepskyblue;
-    --dark: #1b1717;
+    --light: #EEEEEE;
+    --main-color: #393E46;
+    --secondary-color: #00ADB5;
+    --dark: #222831;
 }
 
 * {
@@ -19,8 +20,7 @@
 
 .primary-bg {
     padding: 0.1em 0.2em;
-    background: rgb(170, 20, 240);
-    background: linear-gradient( 90deg, rgba(170, 20, 240, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    background: var(--main-color);
 }
 
 .secondary {
@@ -52,7 +52,7 @@ body {
 }
 
 section {
-    padding: 6em 1em;
+    padding: 3em 1em;
 }
 
 .wrapper {
@@ -159,8 +159,7 @@ form {
     padding: 0.5em;
     border-radius: 0 1em 1em 0;
     min-width: 150px;
-    background: rgb(170, 20, 240);
-    background: linear-gradient( 90deg, rgba(170, 20, 240, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    background: var(--secondary-color);
 }
 
 .input-container input,
@@ -185,13 +184,10 @@ form {
 }
 
 form input[type="submit"] {
-    color: white;
-    font-weight: bold;
-    text-transform: uppercase;
     padding: 1em;
+    color: white;
     border: none;
-    background: rgb(170, 20, 240);
-    background: linear-gradient( 90deg, rgba(170, 20, 240, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    background: var(--secondary-color);
 }
 
 form input[type="submit"]:hover {
@@ -241,12 +237,11 @@ form input[type="submit"]:hover {
     padding: 1em 3em;
     font-weight: bold;
     color: white;
-    background: rgb(170, 20, 240);
-    background: linear-gradient( 90deg, rgba(170, 20, 240, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    background: var(--main-color);
 }
 
 .card-link:hover {
-    background: rgba(0, 212, 255, 1);
+    background: var(--secondary-color);
 }
 
 
@@ -290,18 +285,17 @@ form input[type="submit"]:hover {
     padding: 1em;
     font-weight: bold;
     color: white;
-    background: rgb(170, 20, 240);
-    background: linear-gradient( 90deg, rgba(170, 20, 240, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    background: var(--secondary-color);
 }
 
 
 /*--- Social ---*/
 
 .social-links {
-    margin: 1em 0;
+    margin: 0.5em 0;
     display: flex;
-    gap: 1em;
-    font-size: 1.5em;
+    gap: 0.5em;
+    font-size: 3em;
 }
 
 .social-links>* {
@@ -329,6 +323,7 @@ form input[type="submit"]:hover {
  */
 
 @-webkit-keyframes wobble-hor-bottom {
+
     0%,
     100% {
         -webkit-transform: translateX(0%);
@@ -336,22 +331,27 @@ form input[type="submit"]:hover {
         -webkit-transform-origin: 50% 50%;
         transform-origin: 50% 50%;
     }
+
     15% {
         -webkit-transform: translateX(-30px) rotate(-6deg);
         transform: translateX(-30px) rotate(-6deg);
     }
+
     30% {
         -webkit-transform: translateX(15px) rotate(6deg);
         transform: translateX(15px) rotate(6deg);
     }
+
     45% {
         -webkit-transform: translateX(-15px) rotate(-3.6deg);
         transform: translateX(-15px) rotate(-3.6deg);
     }
+
     60% {
         -webkit-transform: translateX(9px) rotate(2.4deg);
         transform: translateX(9px) rotate(2.4deg);
     }
+
     75% {
         -webkit-transform: translateX(-6px) rotate(-1.2deg);
         transform: translateX(-6px) rotate(-1.2deg);
@@ -359,6 +359,7 @@ form input[type="submit"]:hover {
 }
 
 @keyframes wobble-hor-bottom {
+
     0%,
     100% {
         -webkit-transform: translateX(0%);
@@ -366,22 +367,27 @@ form input[type="submit"]:hover {
         -webkit-transform-origin: 50% 50%;
         transform-origin: 50% 50%;
     }
+
     15% {
         -webkit-transform: translateX(-30px) rotate(-6deg);
         transform: translateX(-30px) rotate(-6deg);
     }
+
     30% {
         -webkit-transform: translateX(15px) rotate(6deg);
         transform: translateX(15px) rotate(6deg);
     }
+
     45% {
         -webkit-transform: translateX(-15px) rotate(-3.6deg);
         transform: translateX(-15px) rotate(-3.6deg);
     }
+
     60% {
         -webkit-transform: translateX(9px) rotate(2.4deg);
         transform: translateX(9px) rotate(2.4deg);
     }
+
     75% {
         -webkit-transform: translateX(-6px) rotate(-1.2deg);
         transform: translateX(-6px) rotate(-1.2deg);

@@ -6,8 +6,6 @@ import ServiceCard from "../ServiceCard";
 
 const services = settings.services;
 
-const links = settings.navbar_links;
-
 const MyService: React.FC = () => {
     return (
         <Section>
