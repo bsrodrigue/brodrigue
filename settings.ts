@@ -3,9 +3,9 @@ const services: Service[] = [
 
   {
     icon: "react",
-    title: "Dévéloppement Frontend",
+    title: "Dévéloppement Frontend React",
     description:
-      "Beaucoup de dévéloppeurs web négligent les compétences en implémentation d'interfaces pour les pages web. Confiez-moi ce travail.",
+      "Permettez-moi d'utiliser l'un des frameworks les plus populaires et efficaces pour concevoir vos interfaces utilisateurs.",
   },
 
 ];
@@ -97,12 +97,9 @@ const navbar_links = [
 ];
 
 const actuality = [
-  "Je suis étudiant en Master I de Management de Système d'Informations.",
-  "Je travaille en tant que dévéloppeur web et mobile chez Nine7soft depuis plus d'un an maintenant.",
-  "J'apprends le langage de programmation C.",
-  "J'étudie la conception d'interpréteurs et de compilateurs en Java et C.",
-  "J'apprends a faire la cuisine.",
-  "Je cherche de nouveaux jeux marquants à essayer.",
+  "Je suis étudiant en Master II de Management de Système d'Informations.",
+  "J'apprends le framework web Astro",
+  "Je joue au excellent jeu Hollow Knight",
   "Je profite de la vie.",
 ];
 
