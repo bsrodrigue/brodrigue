@@ -7,11 +7,11 @@ const Welcome: React.FC = () => {
         {" "}
         <span className="primary-bg">BADINI</span> Rachid Rodrigue
       </h1>
-      <p>
-        Salut et bienvenue sur mon site! Je me présente, je réponds au nom de BADINI Rachid Rodrigue. J'ai 23 ans et je
-        vis au Burkina Faso. Je suis dévéloppeur web fullstack mais je suis également passionné par d'autres domaines de
-        la programmation. Mes plus grandes passions sont la lecture, les jeux vidéos, apprendre de nouvelles technologies
-        et découvrir comment les choses fonctionnent.
+      <p style={{textAlign: "justify"}}>
+        Bienvenue sur mon site professionel! Je réponds au nom de BADINI Rachid Rodrigue. 
+        J'ai 25 ans et je suis un développeur fullstack, vivant actuellement au Burkina Faso.
+        Mes outils de base sont React, React Native et Spring Boot. 
+        Mais j'essaie de rester flexible en apprenant les concepts fondamentaux et en expérimentant avec d'autres technologies.
       </p>
     </div>
   );

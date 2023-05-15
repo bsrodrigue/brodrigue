@@ -1,3 +1,8 @@
 .actuality_item {
-    font-style: italic;
+  font-size: 1.5em;
+  font-weight: bold;
+  background-color: #A27B5C;
+  color: white;
+  padding: 0.3em 1em;
+  margin: 0.3em;
 }

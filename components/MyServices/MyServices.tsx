@@ -10,7 +10,6 @@ const MyService: React.FC = () => {
     return (
         <Section>
             <h1 id="services">Mes services</h1>
-            <small>Besoin d'un programmeur? Voici mes services:</small>
             <div className="x-flex">
                 {services.map((service: Service, index: number) => (
                     <ServiceCard

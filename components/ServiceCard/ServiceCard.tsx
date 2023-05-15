@@ -1,5 +1,7 @@
 import React from "react";
-import { DiDjango, DiReact } from "react-icons/di";
+import { DiReact } from "react-icons/di";
+import { SiSpringboot } from "react-icons/si";
+import { ImMobile } from "react-icons/im";
 import { Service } from "../../interfaces";
 
 const ServiceCard: React.FC<Service> = (props: Service) => {
@@ -8,9 +10,9 @@ const ServiceCard: React.FC<Service> = (props: Service) => {
     <div className="card">
       <div className="card-header">
         <div className="card-icon">
-          {icon === "django" && <DiDjango />}
+          {icon === "spring" && <SiSpringboot />}
           {icon === "react" && <DiReact />}
-          {icon === "react-native" && <DiReact />}
+          {icon === "mobile" && <ImMobile />}
         </div>
         <p className="card-title">{title}</p>
       </div>
@@ -20,9 +22,7 @@ const ServiceCard: React.FC<Service> = (props: Service) => {
       </div>
 
       <div className="card-footer">
-        <a className="card-link" href="#contact">
-          Contact Me
-        </a>
+        <a className="card-link" href="#contact">Contactez-moi</a>
       </div>
     </div>
   );

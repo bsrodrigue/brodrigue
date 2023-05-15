@@ -3,9 +3,23 @@ const services: Service[] = [
 
   {
     icon: "react",
-    title: "Dévéloppement Frontend React",
+    title: "Développement Frontend React",
     description:
       "Permettez-moi d'utiliser l'un des frameworks les plus populaires et efficaces pour concevoir vos interfaces utilisateurs.",
+  },
+
+  {
+    icon: "mobile",
+    title: "Développement Mobile React Native",
+    description:
+      "Avec React Native, je peux rapidement vous développer une application mobile, utilisable à la fois sur Android et iOS",
+  },
+
+  {
+    icon: "spring",
+    title: "Développement Backend Spring Boot",
+    description:
+      "J'adore Spring Boot! C'est l'un des frameworks les plus appréciés pour développer des backends solides et efficaces",
   },
 
 ];
@@ -87,19 +101,17 @@ const navbar_links = [
     to: "/#social",
   },
   {
-    title: "Mes projets",
-    to: "/my-projects",
-  },
-  {
     title: "Github",
     to: "https://github.com/bsrodrigue",
   },
 ];
 
 const actuality = [
-  "Je suis étudiant en Master II de Management de Système d'Informations.",
-  "J'apprends le framework web Astro",
-  "Je joue au excellent jeu Hollow Knight",
+  "J'apprends le framework Java Spring Boot",
+  "J'approfondis mes connaissances en programmation OOP",
+  "Je lis 'The Psychology of Money' de MORGAN HOUSEL",
+  "J'ameliore mon anglais",
+  "Je travaille sur un nouveau projet personel",
   "Je profite de la vie.",
 ];
 
