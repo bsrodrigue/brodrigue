@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@1;100;200;300;400;500;600;700;800;900;1000&display=swap');
 
 :root {
     --light: #EEEEEE;
-    --main-color: #3F4E4F;
-    --secondary-color: #A27B5C;
-    --dark: #222831;
+    --main-color: #0079FF;
+    --secondary-color: #0079FF;
+    --dark: #080202;
 }
 
 * {
@@ -97,19 +97,19 @@ section {
 
 body {
     /* background-color: ; */
-  background-color: #2C3639;
+    background-color: #080202;
     /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='30' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23222' stroke-width='10' %3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E"); */
 }
 
 .bg-white {
-    background-color: #DCD7C9;
+    background-color: white;
 }
 
 
 /*--- Typography ---*/
 
 body {
-    font-family: "Source Code Pro", sans-serif;
+    font-family: "Ysabeau SC", sans-serif;
     font-size: calc(12px + (16 - 12) * ((100vw - 300px) / (1600 - 300)));
 }
 
@@ -158,7 +158,7 @@ form {
     color: white;
     text-transform: uppercase;
     padding: 0.5em;
-    border-radius: 0 1em 1em 0;
+    border-radius: 0.2em;
     min-width: 150px;
     background: var(--secondary-color);
 }
@@ -188,6 +188,8 @@ form input[type="submit"] {
     padding: 1em;
     color: white;
     border: none;
+    border-radius: 0.2em;
+    font-weight: bold;
     background: var(--secondary-color);
 }
 
@@ -225,13 +227,14 @@ form input[type="submit"]:hover {
 .card-title {
     margin: 1em 0em;
     text-align: center;
-    font-size: 1.8em;
-    font-weight: bold;
+    font-size: 1.2em;
+    font-weight: 900;
 }
 
 .card-description {
     margin: 1em 0em;
-    font-size: 1.2em;
+    font-size: 1em;
+    opacity: 0.5;
     text-align: center;
 }
 
@@ -291,8 +294,8 @@ form input[type="submit"]:hover {
 }
 
 /*--- List ---*/
-ul{
-  list-style: none;
+ul {
+    list-style: none;
 }
 
 /*--- Social ---*/

@@ -10,7 +10,7 @@ const Welcome: React.FC = () => {
       <p style={{textAlign: "justify"}}>
         Bienvenue sur mon site professionel! Je réponds au nom de BADINI Rachid Rodrigue. 
         J'ai 25 ans et je suis un développeur fullstack, vivant actuellement au Burkina Faso.
-        Mes outils de base sont React, React Native et Spring Boot. 
+        Mes outils de base sont React, React Native et Next.js
         Mais j'essaie de rester flexible en apprenant les concepts fondamentaux et en expérimentant avec d'autres technologies.
       </p>
     </div>

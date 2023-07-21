@@ -1,7 +1,8 @@
 .actuality_item {
   font-size: 1.5em;
   font-weight: bold;
-  background-color: #A27B5C;
+  background-color: black;
+  border-radius: 5px;
   color: white;
   padding: 0.3em 1em;
   margin: 0.3em;

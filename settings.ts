@@ -3,7 +3,7 @@ const services: Service[] = [
 
   {
     icon: "react",
-    title: "Développement Frontend React",
+    title: "Développement Frontend React & Next.js",
     description:
       "Permettez-moi d'utiliser l'un des frameworks les plus populaires et efficaces pour concevoir vos interfaces utilisateurs.",
   },
@@ -16,10 +16,10 @@ const services: Service[] = [
   },
 
   {
-    icon: "spring",
-    title: "Développement Backend Spring Boot",
+    icon: "flutter",
+    title: "Développement Mobile Flutter",
     description:
-      "J'adore Spring Boot! C'est l'un des frameworks les plus appréciés pour développer des backends solides et efficaces",
+      "Flutter est rapidement devenu un framework très appréciés auprès des développeurs, et ce pour d'excellentes raisons. Laissez-moi donner vie à vos plus gros projets mobiles avec Flutter",
   },
 
 ];
@@ -107,11 +107,10 @@ const navbar_links = [
 ];
 
 const actuality = [
-  "J'apprends le framework Java Spring Boot",
+  "J'approfondis mes connaissances en Django",
   "J'approfondis mes connaissances en programmation OOP",
-  "Je lis 'The Psychology of Money' de MORGAN HOUSEL",
-  "J'ameliore mon anglais",
-  "Je travaille sur un nouveau projet personel",
+  "J'ameliore mon anglais oral",
+  "Je travaille sur une nouvelle application mobile en React Native",
   "Je profite de la vie.",
 ];
 
