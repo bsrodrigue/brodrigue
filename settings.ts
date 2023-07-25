@@ -76,6 +76,14 @@ const portfolioProjects: PortfolioProject[] = [
     link: "https://b-rodrigue.com/",
     stack: "react",
   },
+  {
+    cover: require("./public/images/projects/gandyam.png"),
+    title: "Gandyam Pay",
+    description:
+      "J'ai réalisé ce site pour l'entreprise Gandyam Ligdi",
+    link: "https://gandyampay.netlify.app/",
+    stack: "react",
+  },
 
 ];
 

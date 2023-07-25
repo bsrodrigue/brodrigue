@@ -12,7 +12,6 @@ const Portfolio: React.FC<Props> = (props: Props) => {
   return (
     <>
       <h1>{title}</h1>
-      {description && <small>{description}</small>}
       <div id="portfolio" className="grid">
         {projects.map((project: PortfolioProject, index: number) => (
           <ContentCard key={index} content={project} />

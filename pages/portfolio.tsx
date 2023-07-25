@@ -18,8 +18,6 @@ const PortfolioPage: React.FC = () => {
         <>
             <Section background="bg-white" >
                 <h1>Mon portfolio</h1>
-                <small>En tant que développeur web fullstack, je me spécialise en Typescript et Python avec les framework React et Django.</small>
-                <small>Voici certains de mes projets:</small>
             </Section>
             <Section background="bg-white">
                 <Portfolio title="Projets Vanilla"
