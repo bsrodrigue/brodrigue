@@ -14,9 +14,11 @@ const ContentCard: React.FC<Props> = (props: Props) => {
       <div className={style.content_overlay}>
         <p className={style.content_title}>{title}</p>
         <p className={style.content_description}>{description}</p>
-        <a className={`${style.content_open} fill-button`} href={link} target="_blank" rel="noreferrer">Découvrir</a>
+        <a className={`${style.content_open} fill-button`} href={link} target="_blank" rel="noreferrer">
+          Discover
+        </a>
       </div>
-      <Image className={style.content_img} src={cover} layout='fill' alt="project-cover" />
+      <Image className={style.content_img} src={cover} fill alt="project-cover" />
     </div>
   );
 };

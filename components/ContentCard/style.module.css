@@ -1,10 +1,12 @@
 /*--- content Card ---*/
 
 .content_card {
+    flex: 1;
     position: relative;
-    width: 100%;
     overflow: hidden;
+    border-radius: 1em;
     aspect-ratio: 16 / 9;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
 .content_overlay,
@@ -15,15 +17,15 @@
     width: 100%;
     height: 100%;
     z-index: 0;
+    /* border-radius: 1em; */
 }
 
 .content_overlay {
-    z-index: 1;
-    background-color: rgba(255, 255, 255, 0);
+    z-index: 5;
     left: -100%;
     width: 100%;
     text-align: center;
-    padding: 5px 10px;
+    padding: 0.5em 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -44,23 +46,15 @@
     color: white;
     font-weight: bold;
     text-transform: uppercase;
-    background: rgb(170, 20, 240);
-    background: linear-gradient( 90deg, rgba(170, 20, 240, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    background: var(--main-color);
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
 .content_description {
-    margin: 0.5em 0;
+    margin: 0.5em 0.5em;
     text-align: center;
-    font-size: 1em;
-    font-style: italic;
-}
-
-.tech_logo {
-    height: 30px;
-    width: 30px;
-    display: inline-block;
-    margin: 0px 5px;
+    font-size: 1.2em;
+    opacity: 0.6;
 }
 
 .content_open {

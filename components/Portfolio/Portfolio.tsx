@@ -8,7 +8,7 @@ interface Props {
 }
 
 const Portfolio: React.FC<Props> = (props: Props) => {
-  const { title, description, projects } = props;
+  const { title, projects } = props;
   return (
     <>
       <h1>{title}</h1>

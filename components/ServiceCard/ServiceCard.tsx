@@ -1,5 +1,5 @@
 import React from "react";
-import { SiFlutter, SiNextdotjs, SiReact, SiSpringboot } from "react-icons/si";
+import { SiNestjs, SiNextdotjs, SiReact, SiSpringboot } from "react-icons/si";
 import { Service } from "../../interfaces";
 
 const ServiceCard: React.FC<Service> = (props: Service) => {
@@ -11,7 +11,7 @@ const ServiceCard: React.FC<Service> = (props: Service) => {
           {icon === "spring" && <SiSpringboot />}
           {icon === "react" && <SiNextdotjs />}
           {icon === "mobile" && <SiReact />}
-          {icon === "flutter" && <SiFlutter />}
+          {icon === "nest" && <SiNestjs />}
         </div>
         <p className="card-title">{title}</p>
       </div>
@@ -21,7 +21,7 @@ const ServiceCard: React.FC<Service> = (props: Service) => {
       </div>
 
       <div className="card-footer">
-        <a className="card-link" href="#contact">Contactez-moi</a>
+        <a className="card-link" href="#contact">Contact Me</a>
       </div>
     </div>
   );
