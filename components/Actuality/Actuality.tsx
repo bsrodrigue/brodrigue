@@ -9,11 +9,11 @@ const actuality = settings.actuality;
 const Actuality: React.FC = () => {
     return (
         <Section background="bg-white">
-            <h1 id="my-actuality">Mon actualité</h1>
+            <h1 id="my-actuality">What am I doing now?</h1>
             <ul>
                 {
                     actuality.map((entry: string, index: number) => {
-                        return (<li className={style.actuality_item} key={index}>{entry}</li>);
+                        return (<li className={style.actuality_item} key={index}>{">_ "}{entry}</li>);
                     })
                 }
             </ul>

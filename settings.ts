@@ -5,21 +5,21 @@ const services: Service[] = [
     icon: "react",
     title: "Next.js & React Frontend Development",
     description:
-      "Permettez-moi d'utiliser l'un des frameworks les plus populaires et efficaces pour concevoir vos interfaces utilisateurs.",
+      "I have a solid foundation in React.js and can help you build nice looking websites. No matter how challenging your UI, just trust me.",
   },
 
   {
     icon: "mobile",
     title: "React Native Mobile Development",
     description:
-      "Avec React Native, je peux rapidement vous développer une application mobile, utilisable à la fois sur Android et iOS",
+      "With this awesome tool, I can build for you beautiful mobile apps with crisp UI, very quickly and so, with limited cost.",
   },
 
   {
     icon: "nest",
     title: "Typescript Nest.js Backend Development",
     description:
-      "Flutter est rapidement devenu un framework très appréciés auprès des développeurs, et ce pour d'excellentes raisons. Laissez-moi donner vie à vos plus gros projets mobiles avec Flutter",
+      "Nest.js became my backend framework of choice for my projects. Whether you want a REST or GraphQL API, I can build one for you.",
   },
 
 ];
@@ -30,7 +30,7 @@ const portfolioProjects: PortfolioProject[] = [
     cover: require("./public/images/projects/afrosound.webp"),
     title: "AfroSound",
     description:
-      "Une page d'accueil pour une plateforme fictive de streaming et de téléchargement de musique africaine.",
+      "I built this single page in vanilla html, some bootstrap and javascript to get a better grasp of the base web technologies. I believe this was the foundation of my current frontend skills.",
     link: "https://badini-afrosound.netlify.app/",
     stack: "vanilla",
   },
@@ -38,7 +38,7 @@ const portfolioProjects: PortfolioProject[] = [
     cover: require("./public/images/projects/hiredev.webp"),
     title: "Hire A Dev",
     description:
-      "Une page d'accueil pour une plateforme fictive de publications d'offres et de demandes d'emploi pour développeurs.",
+      "After building Afrosound, I wanted some new challenge by building a better looking static website. It led to this fun project where I built a nice looking page with bootstrap and jquery.",
     link: "https://hire1dev.netlify.app/",
     stack: "vanilla",
   },
@@ -46,17 +46,18 @@ const portfolioProjects: PortfolioProject[] = [
     cover: require("./public/images/projects/gameyaar.webp"),
     title: "Gameyaar",
     description:
-      "Il s'agit d'un site web purement fictif de ventes de consoles de jeux. Je l'ai fait sans utiliser aucun framework css.",
+      "I am a huge fan of video games, and this is probably my favourite static web page. For this one, I wanted an even bigger challenge, and decided not to rely on bootstrap. I am proud of the result and even used a library called 'Tilt.js' to add an awesome tilting effect on hover.",
     link: "https://gameyaar.netlify.app/",
     stack: "vanilla",
   },
+
 
   // React
   {
     cover: require("./public/images/projects/otapix.png"),
     title: "Otapix",
     description:
-      "Ce jeu s'inpire du celebre 4 Images 1 Mot. Vous pouvez créer vos propres niveaux et les partager avec les autres joueurs.",
+      "This is an online game to play a variant of 4Images1Word, a famous mobile game where you have to guess the correct word by looking the four hint images. This one took me a lot of work and taught me the importance of clean code and planning. I use firebase as the backend and Next.js on the UI side",
     link: "https://dev-otapix.netlify.app/",
     stack: "react",
   },
@@ -64,7 +65,7 @@ const portfolioProjects: PortfolioProject[] = [
     cover: require("./public/images/projects/pomodoomer.png"),
     title: "Pomodoomer",
     description:
-      "Une simple application web pomodoro",
+      "I sometimes use the Pomodoro technique while coding, and I wondered if I could build my own. It made me realize that working with timers can be tricky, but it turned out fine.",
     link: "https://pomodoomer.netlify.app/",
     stack: "react",
   },
@@ -72,7 +73,7 @@ const portfolioProjects: PortfolioProject[] = [
     cover: require("./public/images/projects/brodrigue.png"),
     title: "BRodrigue",
     description:
-      "Et oui! ce site fait parti de mes conceptions ;')",
+      "Some developers prefer using a prebuilt website or template for their portfolio. I prefer quality handmade goods with ❤️",
     link: "https://b-rodrigue.com/",
     stack: "react",
   },
@@ -80,7 +81,7 @@ const portfolioProjects: PortfolioProject[] = [
     cover: require("./public/images/projects/gamosyaar.png"),
     title: "Gamos Yaar",
     description:
-      "J'ai réalisé ce site pour l'entreprise Gandyam Ligdi",
+      "A fun little project: A car searching web application leveraging a complete public car API. It is built using Next.js 13 and Tailwind",
     link: "https://gamosyaar.netlify.app/",
     stack: "react",
   },
@@ -88,7 +89,7 @@ const portfolioProjects: PortfolioProject[] = [
     cover: require("./public/images/projects/gandyam.png"),
     title: "Gandyam Pay",
     description:
-      "J'ai réalisé ce site pour l'entreprise Gandyam Ligdi",
+      "This is a website I've built for an employer at Gandyam Ligdi, a fintech company based in Burkina Faso. They wanted a nice looking website for their latest money transfer mobile application. I built it with React and Material UI along with Framer Motion for animations.",
     link: "https://gandyampay.netlify.app/",
     stack: "react",
   },
@@ -96,17 +97,18 @@ const portfolioProjects: PortfolioProject[] = [
     cover: require("./public/images/projects/dyswis.png"),
     title: "Dyswis Web",
     description:
-      "J'ai réalisé ce site pour l'entreprise Gandyam Ligdi",
+      "DYSWIS (Do You See What I See) was my first projects at N7-Studio, a canadian software company. The crux of my work was to implement the UI of the registration pages, integrate a Stripe payment process and a customer dashboard to manage their subscriptions",
     link: "https://dyswis.tv/en/dyswis-2/",
     stack: "react",
   },
+
 
   // React Native
   {
     cover: require("./public/images/projects/dyswis-mobile.png"),
     title: "Dyswis Mobile",
     description:
-      "J'ai réalisé ce site pour l'entreprise Gandyam Ligdi",
+      "This is the mobile version of the Dyswis platform I worked on during my days at N7-Studio. It was a very interesting project and we leveraged Expo to make the development process faster. I learned about GraphQL and NX monorepos",
     link: "https://play.google.com/store/apps/details?id=tv.dyswis.dyswis&hl=fr",
     stack: "react-native",
   },
@@ -114,17 +116,18 @@ const portfolioProjects: PortfolioProject[] = [
     cover: require("./public/images/projects/bibliobooks-mobile.png"),
     title: "Bibliobooks Mobile",
     description:
-      "This is one of my favourite personal projects with React Native and Expo",
+      "Not only am I a technology enthusiast, but I am also an avid reader. I wanted to develop my own book writing and reading application. I took inspiration from Wattpad. Here again, I use Expo. My backend is written in Nest.js and file upload and storage is handled by firebase firestore.",
     link: "https://github.com/bsrodrigue/bibliobooks-mobile",
     stack: "react-native",
   },
+
 
   // C/c++ 
   {
     cover: require("./public/images/projects/beanlang.png"),
     title: "Beanlang",
     description:
-      "J'ai réalisé ce site pour l'entreprise Gandyam Ligdi",
+      "I've always wondered how programming languages are made. I didn't shy away and took a deep plunge in the compiler and interpreter design world. It really changed my perspective about programming and motivated me to learn even more. Here is a simple interpreter written in C",
     link: "https://github.com/bsrodrigue/beanlang",
     stack: "c",
   },
@@ -158,11 +161,10 @@ const navbar_links = [
 ];
 
 const actuality = [
-  "J'approfondis mes connaissances en Django",
-  "J'approfondis mes connaissances en programmation OOP",
-  "J'ameliore mon anglais oral",
-  "Je travaille sur une nouvelle application mobile en React Native",
-  "Je profite de la vie.",
+  "I deepen my knowledge about React Native's internals",
+  "I am building my own shell for fun: https://github.com/bsrodrigue/beanshell",
+  "I currently work at Gandyam Ligdi and am building a mobile wallet in React Native",
+  "I enjoy life",
 ];
 
 const settings = {
