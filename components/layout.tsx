@@ -11,7 +11,7 @@ const Layout: React.FC = ({ children }) => {
       <main>{children}</main>
       <ContactForm />
       <Footer />
-      <a href="#top" className="back-to-top material-shadow">Retour au sommet</a>
+      <a href="#top" className="back-to-top material-shadow">Back to the top</a>
     </>
   );
 };

@@ -9,10 +9,10 @@ const ContactForm: React.FC = () => {
     return (
 
       <Section id="contact" background="bg-white">
-        <h1 id="services">Contactez-moi <BsEmojiSmile /> </h1>
+        <h1 id="services">Contact-Me <BsEmojiSmile /> </h1>
         <form name="contact">
           <div className="input-container">
-            <label htmlFor="name">Nom complet</label>
+            <label htmlFor="name">Full Name</label>
             <input type="text" name="name" id="" required />
           </div>
           <div className="input-container">
@@ -31,7 +31,7 @@ const ContactForm: React.FC = () => {
           <input
             type="submit"
             style={{ fontSize: 20 }}
-            value="Envoyer le message"
+            value="Submit"
           />
         </form>
       </Section>

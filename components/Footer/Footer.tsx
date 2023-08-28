@@ -11,8 +11,8 @@ const Header: React.FC = () => {
     return (
         <footer>
             <Section>
-                <h1 id="social">Merci pour la visite!</h1>
-                <small>Suivez-moi sur les réseaux sociaux</small>
+                <h1 id="social">Thanks for the visit</h1>
+                <small>Follow me on social media</small>
                 <div className="social-links">
                     <Link passHref href="https://www.linkedin.com/in/rachid-rodrigue-badini-688a92186/">
                         <BsLinkedin />
@@ -21,7 +21,7 @@ const Header: React.FC = () => {
                         <BsGithub />
                     </Link>
                 </div>
-                <p>© 2021-2023 b-rodrigue.com · Tous droits réservés </p>
+                <p>© 2021-2023 b-rodrigue.com</p>
             </Section>
         </footer>
     );

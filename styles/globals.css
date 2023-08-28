@@ -67,7 +67,8 @@ section {
 
 .x-flex {
     display: flex;
-    gap: 4em;
+    gap: 2em;
+    flex-wrap: wrap;
 }
 
 .grid {
@@ -88,7 +89,12 @@ section {
 
 @media screen and (max-width: 900px) {
     .x-flex {
-        flex-wrap: wrap;
+        flex-direction: column;
+        font-size: 1.2em;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
     }
 }
 
