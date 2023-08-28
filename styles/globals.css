@@ -87,17 +87,6 @@ section {
     font-size: 2em;
 }
 
-@media screen and (max-width: 900px) {
-    .x-flex {
-        flex-direction: column;
-        font-size: 1.2em;
-    }
-
-    .grid {
-        grid-template-columns: 1fr;
-    }
-}
-
 
 /*--- Background ---*/
 
@@ -410,4 +399,16 @@ ul {
         -webkit-transform: translateX(-6px) rotate(-1.2deg);
         transform: translateX(-6px) rotate(-1.2deg);
     }
+}
+
+@media screen and (max-width: 900px) {
+    .x-flex {
+        flex-direction: column;
+        font-size: 1.2em;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
 }

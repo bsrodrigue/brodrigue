@@ -62,3 +62,11 @@
     border: 1px solid black;
     font-weight: bold;
 }
+
+@media screen and (max-width: 900px) {
+    .content_description {
+        font-size: 1em;
+        text-overflow: ellipsis;
+    }
+
+}
