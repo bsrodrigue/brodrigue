@@ -64,9 +64,20 @@
 }
 
 @media screen and (max-width: 900px) {
+    .content_title {
+        font-size: 0.9em;
+    }
+
     .content_description {
         font-size: 1em;
+        margin: 0;
         text-overflow: ellipsis;
+    }
+
+    .content_open {
+        border: 1px solid black;
+        font-weight: bold;
+        font-size: 0.8em;
     }
 
 }
