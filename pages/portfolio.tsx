@@ -13,22 +13,35 @@ const reactProjects = portfolioProjects.filter((project) => {
     return project.stack === 'react';
 })
 
+const cProjects = portfolioProjects.filter((project) => {
+    return project.stack === 'c';
+})
+
+const reactNativeProjects = portfolioProjects.filter((project) => {
+    return project.stack === 'react-native';
+})
+
 const PortfolioPage: React.FC = () => {
     return (
         <>
             <Section background="bg-white" >
-                <h1>Mon portfolio</h1>
-            </Section>
-            <Section background="bg-white">
-                <Portfolio title="Projets Vanilla"
-                    description="Ce sont de simples pages avec l'intention de démontrer mes compétences en développement frontend."
-                    projects={vanillaProjects} />
+                <h1>My Portfolio</h1>
             </Section>
 
             <Section background="bg-white">
-                <Portfolio title="Projets React"
-                    description="Pour ces projets, j'ai voulu approfondir mes connaissances en React et comment organiser mon code source dessus."
-                    projects={reactProjects} />
+                <Portfolio title="Vanilla Projects" projects={vanillaProjects} />
+            </Section>
+
+            <Section background="bg-white">
+                <Portfolio title="React & Next.js Projects" projects={reactProjects} />
+            </Section>
+
+            <Section background="bg-white" >
+                <Portfolio title="React Native Mobile Projects" projects={reactNativeProjects} />
+            </Section>
+
+            <Section background="bg-white" >
+                <Portfolio title="C/C++ Projects" projects={cProjects} />
             </Section>
         </>
     );

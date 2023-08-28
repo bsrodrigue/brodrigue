@@ -9,7 +9,7 @@ const services = settings.services;
 const MyService: React.FC = () => {
     return (
         <Section>
-            <h1 id="services">Mes services</h1>
+            <h1 id="services">My services</h1>
             <div className="x-flex">
                 {services.map((service: Service, index: number) => (
                     <ServiceCard

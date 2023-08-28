@@ -3,21 +3,21 @@ const services: Service[] = [
 
   {
     icon: "react",
-    title: "Développement Frontend React & Next.js",
+    title: "Next.js & React Frontend Development",
     description:
       "Permettez-moi d'utiliser l'un des frameworks les plus populaires et efficaces pour concevoir vos interfaces utilisateurs.",
   },
 
   {
     icon: "mobile",
-    title: "Développement Mobile React Native",
+    title: "React Native Mobile Development",
     description:
       "Avec React Native, je peux rapidement vous développer une application mobile, utilisable à la fois sur Android et iOS",
   },
 
   {
-    icon: "flutter",
-    title: "Développement Mobile Flutter",
+    icon: "nest",
+    title: "Typescript Nest.js Backend Development",
     description:
       "Flutter est rapidement devenu un framework très appréciés auprès des développeurs, et ce pour d'excellentes raisons. Laissez-moi donner vie à vos plus gros projets mobiles avec Flutter",
   },
@@ -77,6 +77,14 @@ const portfolioProjects: PortfolioProject[] = [
     stack: "react",
   },
   {
+    cover: require("./public/images/projects/gamosyaar.png"),
+    title: "Gamos Yaar",
+    description:
+      "J'ai réalisé ce site pour l'entreprise Gandyam Ligdi",
+    link: "https://gamosyaar.netlify.app/",
+    stack: "react",
+  },
+  {
     cover: require("./public/images/projects/gandyam.png"),
     title: "Gandyam Pay",
     description:
@@ -84,12 +92,47 @@ const portfolioProjects: PortfolioProject[] = [
     link: "https://gandyampay.netlify.app/",
     stack: "react",
   },
+  {
+    cover: require("./public/images/projects/dyswis.png"),
+    title: "Dyswis Web",
+    description:
+      "J'ai réalisé ce site pour l'entreprise Gandyam Ligdi",
+    link: "https://dyswis.tv/en/dyswis-2/",
+    stack: "react",
+  },
 
+  // React Native
+  {
+    cover: require("./public/images/projects/dyswis-mobile.png"),
+    title: "Dyswis Mobile",
+    description:
+      "J'ai réalisé ce site pour l'entreprise Gandyam Ligdi",
+    link: "https://play.google.com/store/apps/details?id=tv.dyswis.dyswis&hl=fr",
+    stack: "react-native",
+  },
+  {
+    cover: require("./public/images/projects/bibliobooks-mobile.png"),
+    title: "Bibliobooks Mobile",
+    description:
+      "This is one of my favourite personal projects with React Native and Expo",
+    link: "https://github.com/bsrodrigue/bibliobooks-mobile",
+    stack: "react-native",
+  },
+
+  // C/c++ 
+  {
+    cover: require("./public/images/projects/beanlang.png"),
+    title: "Beanlang",
+    description:
+      "J'ai réalisé ce site pour l'entreprise Gandyam Ligdi",
+    link: "https://github.com/bsrodrigue/beanlang",
+    stack: "c",
+  },
 ];
 
 const navbar_links = [
   {
-    title: "Accueil",
+    title: "Home",
     to: "/",
   },
   {
@@ -97,7 +140,7 @@ const navbar_links = [
     to: "/portfolio",
   },
   {
-    title: "Mes services",
+    title: "My services",
     to: "/#services",
   },
   {
@@ -105,7 +148,7 @@ const navbar_links = [
     to: "/#contact",
   },
   {
-    title: "Réseaux sociaux",
+    title: "Social networks",
     to: "/#social",
   },
   {

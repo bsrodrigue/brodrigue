@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@1;100;200;300;400;500;600;700;800;900;1000&display=swap');
 
 :root {
-    --light: #EEEEEE;
-    --main-color: #0079FF;
-    --secondary-color: #0079FF;
-    --dark: #080202;
+    --light: #F3EFE0;
+    --main-color: #22A39F;
+    --secondary-color: #22A39F;
+    --dark: #222222;
 }
 
 * {
@@ -73,9 +73,9 @@ section {
 .grid {
     display: grid;
     align-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    column-gap: 0.5em;
-    row-gap: 4em;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2em;
+    row-gap: 2em;
     margin: 2em 0;
 }
 
@@ -97,12 +97,13 @@ section {
 
 body {
     /* background-color: ; */
-    background-color: #080202;
+    background-color: var(--dark);
     /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='30' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23222' stroke-width='10' %3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E"); */
 }
 
 .bg-white {
-    background-color: white;
+    background-color: var(--light);
+    color: var(--dark) !important;
 }
 
 
@@ -201,13 +202,13 @@ form input[type="submit"]:hover {
 /*--- Cards ---*/
 
 .card {
-    width: 100%;
+    flex: 1;
     min-height: 450px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     background-color: white;
     color: black;
-    border-radius: 0.5em;
-    padding: 3em;
+    border-radius: 1em;
+    padding: 2em;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -225,7 +226,7 @@ form input[type="submit"]:hover {
 }
 
 .card-title {
-    margin: 1em 0em;
+    margin: 0.5em 0em;
     text-align: center;
     font-size: 1.2em;
     font-weight: 900;
@@ -234,19 +235,21 @@ form input[type="submit"]:hover {
 .card-description {
     margin: 1em 0em;
     font-size: 1em;
-    opacity: 0.5;
+    opacity: 0.7;
+    font-weight: 500;
     text-align: center;
 }
 
 .card-link {
     padding: 1em 3em;
     font-weight: bold;
+    border-radius: 0.5em;
     color: white;
     background: var(--main-color);
 }
 
 .card-link:hover {
-    background: var(--secondary-color);
+    background: black;
 }
 
 
