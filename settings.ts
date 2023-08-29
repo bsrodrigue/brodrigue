@@ -113,11 +113,27 @@ const portfolioProjects: PortfolioProject[] = [
     stack: "react-native",
   },
   {
-    cover: require("./public/images/projects/bibliobooks-mobile.png"),
+    cover: require("./public/images/projects/gandyam_wallet.png"),
+    title: "Gandyam Pay Wallet",
+    description:
+      "I am currently working on this mobile application at Gandyam Ligdi. As the name suggests, it is a mobile wallet built to facilitate transactions and money transfers in Africa.",
+    link: "",
+    stack: "react-native",
+  },
+  {
+    cover: require("./public/images/projects/bibliobooks.png"),
     title: "Bibliobooks Mobile",
     description:
       "Not only am I a technology enthusiast, but I am also an avid reader. I wanted to develop my own book writing and reading application. I took inspiration from Wattpad. Here again, I use Expo. My backend is written in Nest.js and file upload and storage is handled by firebase firestore.",
     link: "https://github.com/bsrodrigue/bibliobooks-mobile",
+    stack: "react-native",
+  },
+  {
+    cover: require("./public/images/projects/nativejobs.png"),
+    title: "Native Jobs",
+    description:
+      "Job searching is an important part in the life of a Software Engineer, but most of jobseeking websites are bloated. I wanted a simple, beautiful app that would help me look for React & React Native jobs easily.",
+    link: "https://github.com/bsrodrigue/nativejobs",
     stack: "react-native",
   },
 
